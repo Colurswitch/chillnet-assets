@@ -1,0 +1,80 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Chillnet manifest schema",
+    "$ref": "manifest_schema.json",
+    "$id": "manifest_schema.json",
+    "type": "object",
+    "properties": {
+        "latest": {
+            "type": "string",
+            "description": "A string representing the latest available version of the app."
+        },
+        "versions": {
+            "type": "object",
+            "description": "An object containing data for each version of the app.",
+            "properties": {
+                "*": {
+                    "type": "object",
+                    "description": "An object containing data for a specific version of the app.",
+                    "properties": {
+                        "title": {
+                            "type": "string",
+                            "description": "A string representing the title of the version of the app."
+                        },
+                        "remarks": {
+                            "type": "array",
+                            "description": "An array of strings representing remarks, separated by newlines.",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "files": {
+                            "type": "array",
+                            "description": "An array of strings representing the files included in the version of the app."
+                        }
+                    }
+                }
+            }
+        },
+        "databases": {
+            "type": "array",
+            "description": "An array of objects representing the available databases.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "A string representing the name of the database."
+                    },
+                    "content_type": {
+                        "type": "string",
+                        "description": "A string representing the content type of the database."
+                    },
+                    "fetch_type": {
+                        "type": "string",
+                        "description": "A string representing the fetch type of the database.",
+                        "enum": ["local", "api"]
+                    },
+                    "local_path": {
+                        "type": "string",
+                        "description": "A string representing the local path of the database. Used only when fetch_type is 'local'.",
+                        "dependencies": {
+                            "fetch_type": {
+                                "enum": ["local"]
+                            }
+                        }
+                    },
+                    "api_url": {
+                        "type": "string",
+                        "description": "A string representing the API URL of the database. Used only when fetch_type is 'api'.",
+                        "dependencies": {
+                            "fetch_type": {
+                                "enum": ["api"]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

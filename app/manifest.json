@@ -1,0 +1,24 @@
+{
+    "$schema": "manifest_schema.json",
+    "latest": "4.0.0",
+    "versions": {
+        "4.0.0": {
+            "title": "Initial Release",
+            "remarks": [
+                "Initial release."
+            ],
+            "files": [
+                "main.js",
+                "main.css"
+            ]
+        }
+    },
+    "databases": [
+        {
+            "name": "Chillnet built-in games database",
+            "content_type": "games",
+            "fetch_type": "local",
+            "local_path": "databases/games.json"
+        }
+    ]
+}
