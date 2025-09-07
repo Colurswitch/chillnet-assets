@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Chillnet UI element schema",
+    "$id": "element_schema.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "A string representing the ID of the UI element."
+        },
+        "el_type": {
+            "type": "string",
+            "description": "The type of the UI element, as an HTML tag name."
+        },
+        "el_attrs": {
+            "type": "object",
+            "description": "A map of attributes for the UI element.",
+            "patternProperties": {
+                ".*": {
+                    "type": "string"
+                }
+            }
+        },
+        "children": {
+            "type": "array",
+            "description": "An array of UI elements.",
+            "items": {
+                "$ref": "element_schema.json"
+            }
+        }
+    }
+}

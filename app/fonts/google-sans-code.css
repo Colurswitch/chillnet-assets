@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Google Sans Code";
+    font-style: normal;
+    font-weight: 400;
+    src: url("GoogleSansCode-VariableFont_wght.ttf") format("truetype");
+    font-variation-settings: 'wght' 400;
+}
+
+@font-face {
+    font-family: "Google Sans Code";
+    font-style: normal;
+    font-weight: 700;
+    src: url("GoogleSansCode-VariableFont_wght.ttf") format("truetype");
+    font-variation-settings: 'wght' 700;
+}
+
+@font-face {
+    font-family: "Google Sans Code";
+    font-style: italic;
+    font-weight: 400;
+    src: url("GoogleSansCode-Italic-VariableFont_wght.ttf") format("truetype");
+    font-variation-settings: 'wght' 400;
+}
+
+@font-face {
+    font-family: "Google Sans Code";
+    font-style: italic;
+    font-weight: 700;
+    src: url("GoogleSansCode-Italic-VariableFont_wght.ttf") format("truetype");
+    font-variation-settings: 'wght' 700;
+}

@@ -12,8 +12,8 @@
         "versions": {
             "type": "object",
             "description": "An object containing data for each version of the app.",
-            "properties": {
-                "*": {
+            "patternProperties": {
+                ".*": {
                     "type": "object",
                     "description": "An object containing data for a specific version of the app.",
                     "properties": {
@@ -30,7 +30,17 @@
                         },
                         "files": {
                             "type": "array",
-                            "description": "An array of strings representing the files included in the version of the app."
+                            "description": "An array of strings representing the files included in the version of the app.",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "scripts": {
+                            "type": "array",
+                            "description": "An array of external scripts or stylesheets to load in the version of the app.",
+                            "items": {
+                                "type": "string"
+                            }
                         }
                     }
                 }

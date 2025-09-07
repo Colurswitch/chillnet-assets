@@ -8,8 +8,27 @@
                 "Initial release."
             ],
             "files": [
-                "main.js",
-                "main.css"
+                "4.0.0/main.js",
+                "4.0.0/main.css",
+
+                "libs/codemirror/lib/codemirror.js",
+                "libs/codemirror/mode/javascript/javascript.js",
+                "libs/codemirror/addon/fold/foldcode.js",
+                "libs/codemirror/addon/fold/foldgutter.js",
+                "libs/codemirror/addon/fold/brace-fold.js",
+                "libs/codemirror/addon/fold/comment-fold.js",
+                "libs/codemirror/addon/display/autorefresh.js",
+                "libs/codemirror/addon/lint/lint.js",
+                "libs/codemirror/addon/lint/javascript-lint.js",
+                "libs/codemirror/addon/edit/closebrackets.js",
+                "libs/codemirror/addon/hint/show-hint.js"
+            ],
+            "scripts": [
+                "https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js",
+                "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2",
+                "https://js.puter.com/v2/",
+                "https://cdn.plyr.io/3.7.8/plyr.js",
+                "https://unpkg.com/jshint@2.13.2/dist/jshint.js"
             ]
         }
     },
@@ -18,7 +37,7 @@
             "name": "Chillnet built-in games database",
             "content_type": "games",
             "fetch_type": "local",
-            "local_path": "databases/games.json"
+            "local_path": "/databases/games.json"
         }
     ]
 }

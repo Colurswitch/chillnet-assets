@@ -1,0 +1,10 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "title": "Chillnet UI schema",
+    "$ref": "ui_schema.json",
+    "$id": "ui_schema.json",
+    "type": "array",
+    "items": {
+        
+    }
+}
