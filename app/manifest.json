@@ -42,7 +42,7 @@
             "scripts": [
                 "https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js",
                 "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2",
-                "https://js.puter.com/v2/",
+                "https://js.puter.com/v2",
                 "https://cdn.plyr.io/3.7.8/plyr.js",
                 "https://unpkg.com/jshint@2.13.2/dist/jshint.js"
             ]
