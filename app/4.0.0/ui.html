@@ -6090,7 +6090,6 @@
 
                 const existingIcons = document.querySelectorAll("link[rel='icon']");
                 existingIcons.forEach(icon => icon.remove());
-                const settingsIcons = document.getElementById("app.settingsIcons");
                 if (settings.appearance.useCloaking) {
                     document.title = settings.appearance.cloakingOptions.tabName == "Custom" ? settings.appearance.cloakingOptions.customTabName : settings.appearance.cloakingOptions.tabName;
                     if (settings.appearance.cloakingOptions.tabIcon == "Chillnet") {
